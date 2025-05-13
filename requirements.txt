@@ -19,7 +19,9 @@ coloredlogs==15.0.1
 dataclasses-json==0.6.7
 Deprecated==1.2.18
 distro==1.9.0
+docarray==0.41.0
 durationpy==0.9
+faiss-cpu==1.11.0
 fastapi==0.115.9
 filelock==3.18.0
 flatbuffers==25.2.10
@@ -122,6 +124,7 @@ toml==0.10.2
 tornado==6.4.2
 tqdm==4.67.1
 typer==0.15.3
+types-requests==2.32.0.20250328
 typing-inspect==0.9.0
 typing-inspection==0.4.0
 typing_extensions==4.13.2
