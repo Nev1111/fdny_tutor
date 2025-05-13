@@ -11,7 +11,10 @@ load_dotenv()
 
 # Initialize vectorstore and retriever
 persist_dir = "chroma_store"
-vectorstore = Chroma(persist_directory=persist_dir, embedding_function=OpenAIEmbeddings())
+vectorstore = Chroma(
+    persist_directory=persist_dir,
+    embedding_function=OpenAIEmbeddings(openai_api_key=os.getenv("OPENAI_API_KEY"))
+)
 retriever = vectorstore.as_retriever(search_type="similarity", search_kwargs={"k": 4})
 
 # Set up the chain
